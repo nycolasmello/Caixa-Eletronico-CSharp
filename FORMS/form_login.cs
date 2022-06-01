@@ -7,11 +7,12 @@ namespace app_banco_faculdade1
 {
     public partial class form_login : Form
     {
-        SqlConnection cn = new SqlConnection(@"Data Source=WIN-5PG7NDE5FHK; Initial Catalog=app_banco; Integrated Security=True");
+        SqlConnection cn = new SqlConnection(@"Data Source=NYCOLAS;Initial Catalog=app_banco;Integrated Security=True");
         public form_login()
         {
             InitializeComponent();
             txtConta.Select();
+
             
         }
 
@@ -31,7 +32,7 @@ namespace app_banco_faculdade1
 
             if(dt.Rows.Count == 1)
             {
-                opcoes op = new opcoes();
+                opcoes op = new opcoes(txtCpf.Text);
                 this.Hide();
                 op.Show();
             }
@@ -47,5 +48,7 @@ namespace app_banco_faculdade1
             
 
         }
+
+
     }
 }

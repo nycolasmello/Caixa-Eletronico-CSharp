@@ -1,5 +1,5 @@
 ﻿
-namespace app_banco_faculdade1.FORMS
+namespace app_banco_faculdade1
 {
     partial class deposito
     {
@@ -29,49 +29,73 @@ namespace app_banco_faculdade1.FORMS
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtDeposito = new System.Windows.Forms.TextBox();
-            this.btnDepositar_add = new System.Windows.Forms.Button();
+            this.btnDeposito_acc = new System.Windows.Forms.Button();
+            this.txtCpf2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 50);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(116, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "VALOR A DEPOSITAR";
+            // 
+            // txtDeposito
+            // 
+            this.txtDeposito.Location = new System.Drawing.Point(135, 47);
+            this.txtDeposito.Name = "txtDeposito";
+            this.txtDeposito.Size = new System.Drawing.Size(66, 23);
+            this.txtDeposito.TabIndex = 1;
+            this.txtDeposito.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnDeposito_acc
+            // 
+            this.btnDeposito_acc.Location = new System.Drawing.Point(218, 47);
+            this.btnDeposito_acc.Name = "btnDeposito_acc";
+            this.btnDeposito_acc.Size = new System.Drawing.Size(75, 23);
+            this.btnDeposito_acc.TabIndex = 2;
+            this.btnDeposito_acc.Text = "Depositar";
+            this.btnDeposito_acc.UseVisualStyleBackColor = true;
+            this.btnDeposito_acc.Click += new System.EventHandler(this.btnDeposito_acc_Click);
+            // 
+            // txtCpf2
+            // 
+            this.txtCpf2.Location = new System.Drawing.Point(50, 12);
+            this.txtCpf2.Name = "txtCpf2";
+            this.txtCpf2.ReadOnly = true;
+            this.txtCpf2.Size = new System.Drawing.Size(252, 23);
+            this.txtCpf2.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 24);
+            this.label2.Location = new System.Drawing.Point(13, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Valor:";
-            // 
-            // txtDeposito
-            // 
-            this.txtDeposito.Location = new System.Drawing.Point(81, 21);
-            this.txtDeposito.Name = "txtDeposito";
-            this.txtDeposito.Size = new System.Drawing.Size(212, 23);
-            this.txtDeposito.TabIndex = 2;
-            // 
-            // btnDepositar_add
-            // 
-            this.btnDepositar_add.Location = new System.Drawing.Point(313, 20);
-            this.btnDepositar_add.Name = "btnDepositar_add";
-            this.btnDepositar_add.Size = new System.Drawing.Size(75, 23);
-            this.btnDepositar_add.TabIndex = 3;
-            this.btnDepositar_add.Text = "DEPOSITAR";
-            this.btnDepositar_add.UseVisualStyleBackColor = true;
+            this.label2.Size = new System.Drawing.Size(31, 15);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "CPF:";
             // 
             // deposito
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(418, 65);
-            this.Controls.Add(this.btnDepositar_add);
-            this.Controls.Add(this.txtDeposito);
+            this.ClientSize = new System.Drawing.Size(326, 81);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtCpf2);
+            this.Controls.Add(this.btnDeposito_acc);
+            this.Controls.Add(this.txtDeposito);
+            this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "deposito";
             this.ShowIcon = false;
-            this.Text = "DEPOSITO A EL CUENTA XIRA!!";
+            this.Text = "DEPOSITO EN EL CUENTA XIRA!!";
             this.Load += new System.EventHandler(this.deposito_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -80,8 +104,10 @@ namespace app_banco_faculdade1.FORMS
 
         #endregion
 
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtDeposito;
-        private System.Windows.Forms.Button btnDepositar_add;
+        private System.Windows.Forms.Button btnDeposito_acc;
+        private System.Windows.Forms.TextBox txtCpf2;
+        private System.Windows.Forms.Label label2;
     }
 }

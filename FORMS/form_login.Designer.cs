@@ -39,6 +39,7 @@ namespace app_banco_faculdade1
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(12, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 15);
@@ -48,6 +49,7 @@ namespace app_banco_faculdade1
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(12, 65);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 15);
@@ -82,6 +84,7 @@ namespace app_banco_faculdade1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(407, 153);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtCpf);
